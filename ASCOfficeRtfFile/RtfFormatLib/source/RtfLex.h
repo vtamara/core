@@ -436,7 +436,7 @@ private:
 								m_oFileWriter->Write( &byteByte, 1 );
 								bContinue = true;
 							}
-						if( false == bContinue)
+						if( false == bContinue) << !!!
 							break;
 					}
 				}

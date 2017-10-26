@@ -984,8 +984,10 @@ namespace Animations
 				{
 				case TL_TPID_Display			:
 					pRecord		=	new TimeDisplayType ();
+					break;
 				case TL_TPID_MasterPos			:
 					pRecord		=	new TimeMasterRelType ();
+					break;
 				case TL_TPID_SlaveType			:
 					pRecord		=	new TimeSlaveType ();
 					break;

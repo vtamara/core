@@ -1368,7 +1368,6 @@ public:
 		else if ( L"dollarText" == sFormat )					return 0;
 		else if ( L"ganada" == sFormat )						return 24;
 		else if ( L"hebrew1" == sFormat )						return 45;
-		else if ( L"hebrew1" == sFormat )						return 45;
 		else if ( L"hebrew2" == sFormat )						return 47;
 		else if ( L"hex" == sFormat )							return 8;
 		else if ( L"hindiConsonants" == sFormat )				return 50;
@@ -1407,7 +1406,7 @@ public:
 		else if ( L"upperLetter" == sFormat )					return 3;
 		else if ( L"upperRoman" == sFormat )					return 1;
 		else if ( L"vietnameseCounting" == sFormat )			return 56;
-		else if ( L"chicago" == sFormat )						return 70;
+		else if ( L"chicago" == sFormat )						return 70; << !!!
 		
 		return 0; //decimal
 	}

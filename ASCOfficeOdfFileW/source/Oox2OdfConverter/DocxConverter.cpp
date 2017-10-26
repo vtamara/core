@@ -2732,11 +2732,12 @@ void DocxConverter::convert(SimpleTypes::CHexColor<>		*color,
 		{
             std::wstring strColor = L"#" + oRgbColor->ToString().substr(2);//.Right(6);
 
-			odf_color = odf_types::color(strColor);
-			delete oRgbColor;
+			odf_color = odf_types::color(strColor);			
 
 			result = true;
 		}
+		if (oRgbColor)
+			delete oRgbColor;
 	}
 	if(theme_color && result == false)
 	{
@@ -3832,7 +3833,7 @@ void DocxConverter::convert(OOX::Logic::CTr	*oox_table_row)
 
 	if (is_header)odt_context->end_table_header_rows();
 
-	if (id_insert_row >= 0)
+	if (id_insert_row >= 0) // << !!!
 		odt_context->end_change(id_insert_row, 1);
 
 	if (id_delete_row >= 0)
@@ -3978,7 +3979,7 @@ bool DocxConverter::convert(OOX::Logic::CTableProperty *oox_table_pr, odf_writer
 
 void DocxConverter::convert(OOX::Logic::CTableProperty *oox_table_pr, odf_writer::style_table_cell_properties	* table_cell_properties)
 {
-	if (oox_table_pr == NULL || oox_table_pr == NULL) return;
+	if (oox_table_pr == NULL || oox_table_pr == NULL) return; // << !!!
 
 	convert(oox_table_pr->m_oTblBorders.GetPointer(), table_cell_properties);
 

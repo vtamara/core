@@ -67,7 +67,7 @@ xlsx_conversion_context::xlsx_conversion_context(odf_reader::odf_document * odfD
 	output_document_	(NULL),
 	num_format_context_	(odf_document_->odf_context()),
 	xlsx_text_context_	(odf_document_->odf_context().styleContainer()),
-	xlsx_table_context_	(this, xlsx_text_context_),
+	xlsx_table_context_	(this, xlsx_text_context_), // << !!!
 	math_context_		(odf_document_->odf_context().fontContainer(), true),
 	xlsx_style_			(this),
 	

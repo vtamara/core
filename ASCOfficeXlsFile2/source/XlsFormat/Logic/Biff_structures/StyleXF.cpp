@@ -84,7 +84,7 @@ void StyleXF::load(CFRecord& record)
 			case 0:	trot = 0;		break;		// Text orientation: not rotated.
 			case 1: trot = 0xff;	break;		// Text orientation: vertically stacked.
 			case 2: trot = 90;		break;		// Text orientation: 90 deg counterclockwise.
-			case 3: trot = 270;		break;		// Text orientation: 90 deg clockwise.
+			case 3: trot = 270;		break;		// Text orientation: 90 deg clockwise. // << !!!
 		}	
 
 		fill.fls = GETBITS(flags2, 16, 21);

@@ -668,7 +668,7 @@ private:
 					m_pShadingPoints = new double[2];
 					m_pShadingColors = new TColor[2];
 
-					if (!m_pShadingColors || !m_pShadingColors)
+					if (!m_pShadingPoints || !m_pShadingColors)
 						return;
 
 					m_pShadingPoints[0] = 0.0;
@@ -684,7 +684,7 @@ private:
 						m_pShadingPoints = new double[2];
 						m_pShadingColors = new TColor[2];
 
-						if (!m_pShadingColors || !m_pShadingColors)
+						if (!m_pShadingPoints || !m_pShadingColors)
 							return;
 
 						m_pShadingPoints[0] = 0.0;
@@ -698,7 +698,7 @@ private:
 						m_pShadingPoints = new double[2];
 						m_pShadingColors = new TColor[2];
 
-						if (!m_pShadingColors || !m_pShadingColors)
+						if (!m_pShadingPoints || !m_pShadingColors)
 							return;
 
 						m_pShadingPoints[0] = 0.0;
@@ -712,7 +712,7 @@ private:
 						m_pShadingPoints = new double[4];
 						m_pShadingColors = new TColor[4];
 
-						if (!m_pShadingColors || !m_pShadingColors)
+						if (!m_pShadingPoints || !m_pShadingColors)
 							return;
 
 						m_pShadingPoints[0] = 0.0;

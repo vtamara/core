@@ -194,7 +194,7 @@ namespace NSPresentationEditor
 				delete this;
 				return 0;
 			}
-			return m_lCountRef;
+            return m_lCountRef;
 		}
 
 		IElement()

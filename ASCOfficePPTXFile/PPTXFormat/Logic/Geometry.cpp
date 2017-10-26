@@ -130,6 +130,9 @@ namespace PPTX
                             std::to_wstring((int)(dkoefX * txRect.right))   + L"," +
                             std::to_wstring((int)(dkoefY * txRect.bottom));
 			}
+
+            if (lpShapeElement)
+                delete lpShapeElement;
         }
 	}
 }

@@ -63,7 +63,7 @@ namespace DocFileFormat
 			for (std::list<SinglePropertyModifier>::iterator oSpmIter = papx->grpprl->begin(); oSpmIter != papx->grpprl->end(); ++oSpmIter)
 			{
 				if (oSpmIter->OpCode == sprmTDefTableShd	|| oSpmIter->OpCode == sprmTDefTableShd2nd || 
-					oSpmIter->OpCode == sprmTDefTableShd2nd || oSpmIter->OpCode == sprmTDefTableShd3rd)
+					oSpmIter->OpCode == sprmTDefTableShd2nd || oSpmIter->OpCode == sprmTDefTableShd3rd) // << !!!
 				{
 					m_bSkipShading97 = TRUE;
 				}
@@ -80,7 +80,7 @@ namespace DocFileFormat
 					//get the size of the following grpprl
                     oBinReader.Seek(fc, 0/* STREAM_SEEK_SET*/);
 					unsigned char* sizebytes = oBinReader.ReadBytes(2, true);
-					unsigned short grpprlSize = FormatUtils::BytesToUInt16(sizebytes, 0, 2);
+                    unsigned short grpprlSize = FormatUtils::BytesToUInt16(sizebytes, 0, 2);
 
 					//read the grpprl
 					unsigned char* grpprlBytes = oBinReader.ReadBytes(grpprlSize, true);

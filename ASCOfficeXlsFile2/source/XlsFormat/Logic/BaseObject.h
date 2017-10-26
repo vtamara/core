@@ -66,7 +66,7 @@ public:
 	
 	std::list<BaseObjectPtr> elements_;
 
-	virtual ElementType get_type() = 0;
+    virtual ElementType get_type() = 0;
 
 	virtual int serialize(std::wostream & _stream)
 	{

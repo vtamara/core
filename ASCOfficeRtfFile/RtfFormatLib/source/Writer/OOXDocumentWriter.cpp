@@ -262,7 +262,7 @@ bool OOXDocumentWriter::SaveByItem()
 				else
 				{
 					int Find = sXml.rfind( L"<w:p>" );
-					if( -1 != nFind )
+					if( -1 != nFind ) // << !!!
 						sXml.insert( nFind + 5, L"<w:pPr>" + sectPr + L"</w:pPr>" );
 				}
 			}

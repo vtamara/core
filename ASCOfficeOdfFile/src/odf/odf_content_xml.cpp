@@ -88,10 +88,6 @@ void content_xml_t::add_child_element( xml::sax * Reader, const std::wstring & N
     {
         create_element_and_read(Reader, Ns, Name, xml_content_, getContext(), true);
     }
-	else if CP_CHECK_NAME(L"manifest", L"manifest")
-    {
-        create_element_and_read(Reader, Ns, Name, xml_content_, getContext(), true);
-    }	
 }
 
 void content_xml_t::add_text(const std::wstring & Text) 

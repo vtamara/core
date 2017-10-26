@@ -490,7 +490,7 @@ void table_table_column::xlsx_convert(oox::xlsx_conversion_context & Context)
 
 							size_t style_ = Context.get_style_manager().xfId(NULL,NULL, &cellFormatProperties, NULL, L"", set_default);	
 
-							if (style_>=0)
+							if (style_>=0) // << !!!
 							//if (set_default)
 								CP_XML_ATTR(L"style", style_ );
 						}
@@ -790,7 +790,7 @@ void table_table_cell::xlsx_convert(oox::xlsx_conversion_context & Context)
 		!formula.empty()	||
 		(	t_val == oox::XlsxCellType::n										&& !number_val.empty()) || 
 		(	t_val == oox::XlsxCellType::b										&& bool_val) ||
-		((	t_val == oox::XlsxCellType::str || oox::XlsxCellType::inlineStr)	&& str_val))	is_data_visible = true;
+		((	t_val == oox::XlsxCellType::str || t_val == oox::XlsxCellType::inlineStr)	&& str_val))	is_data_visible = true;
 
 	if (attlist_.table_number_columns_repeated_ < 199 && last_cell_)	last_cell_ = false;
 	

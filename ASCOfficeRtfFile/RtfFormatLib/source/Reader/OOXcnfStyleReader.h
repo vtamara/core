@@ -83,8 +83,6 @@ public:
 			oResult.bLastRowFirstCol = true;
 		else if( true == bLastRowLastCol )
 			oResult.bLastRowLastCol = true;
-		else if( true == bLastRowLastCol )
-			oResult.bLastRowLastCol = true;
 		else if( true == bFirstCol )
 			oResult.bFirstCol = true;
 		else if( true == bLastCol )

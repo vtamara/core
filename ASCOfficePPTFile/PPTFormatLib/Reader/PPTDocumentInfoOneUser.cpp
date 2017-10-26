@@ -2438,6 +2438,7 @@ void CPPTUserInfo::AddAudioTransition (DWORD dwSlideID, CTransition* pTransition
 		pAudio->m_strAudioFileName	=	strFilePath;				
 	}
 	// ??? недоделка ???
+	pAudio->Release();
 }
 
 void CPPTUserInfo::CreateDefaultStyle(NSPresentationEditor::CTextStyles& pStyle, NSPresentationEditor::CTheme* pTheme)

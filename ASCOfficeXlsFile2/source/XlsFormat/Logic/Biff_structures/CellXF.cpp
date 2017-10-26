@@ -78,7 +78,7 @@ void CellXF::load(CFRecord& record)
 			case 0:	trot = 0;		break;		// Text orientation: not rotated.
 			case 1: trot = 0xff;	break;		// Text orientation: vertically stacked.
 			case 2: trot = 90;		break;		// Text orientation: 90 deg counterclockwise.
-			case 3: trot = 270;		break;		// Text orientation: 90 deg clockwise.
+			case 3: trot = 270;		break;		// Text orientation: 90 deg clockwise. // << !!!
 		}
 		fAtrNum = GETBIT(flags2, 10);
 		fAtrFnt = GETBIT(flags2, 11);

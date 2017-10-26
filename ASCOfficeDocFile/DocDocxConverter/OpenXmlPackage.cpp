@@ -144,7 +144,7 @@ namespace DocFileFormat
 	{
 		POLE::Storage *storageOut = new POLE::Storage(fileName.c_str());
 		
-		if (storageOut == NULL || docFile == NULL) return S_FALSE;
+		if (storageOut == NULL || docFile == NULL) return S_FALSE; // << !!! Release storageOut
 		if (storageOut->open(true, true)==false)
 		{	
 			delete storageOut;

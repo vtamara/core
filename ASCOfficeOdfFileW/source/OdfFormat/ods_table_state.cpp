@@ -87,7 +87,7 @@ std::wstring convert_date(const std::wstring & oox_date)
 							(date_.day() < 10 ? L"0": L"") + boost::lexical_cast<std::wstring>(date_.day());
 	return date_str;
 }
-
+// << !!!!!!!!!!!!!!!!!!!!!!!!!!
 std::wstring convert_time(const std::wstring & oox_time)
 {
 	double dTime = 0;

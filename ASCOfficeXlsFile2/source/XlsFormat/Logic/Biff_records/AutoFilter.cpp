@@ -106,7 +106,7 @@ void AutoFilter::readFields(CFRecord& record)
 	if (fTopN != 1)
 		record >> doper2;
 
-	if ((doper1.vt == BIFF_BYTE(0)) && (doper1.vt == BIFF_BYTE(0)))
+	if ((doper1.vt == BIFF_BYTE(0)) && (doper2.vt == BIFF_BYTE(0)))
 	{
 		m_bAutoFilter12 = true;	
 		return;

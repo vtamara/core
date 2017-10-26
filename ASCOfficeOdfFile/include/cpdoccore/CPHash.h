@@ -45,7 +45,7 @@ std::size_t hash_value(typename optional<T>::Type const & val)
 {
     if (val)
     {
-        boost::hash<T>(*val);        
+        boost::hash<T>(*val); // << !!!        
     }
     else
         return 0;

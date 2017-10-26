@@ -2839,7 +2839,6 @@ std::wstring RtfRowProperty::RenderToOOX(RenderParameter oRenderParameter)
 
 	if (m_pOldRowProperty)
 	{
-		m_pOldRowProperty;
 		//if ( PROP_DEF != oReader.m_oState->m_oCharProp.m_nDeleted )
 		//{
         //	std::wstring sAuthor = poRtfDocument->m_oRevisionTable.GetAuthor(oReader.m_oState->m_oCharProp.m_nRevauthDel);
