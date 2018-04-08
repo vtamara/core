@@ -247,11 +247,12 @@ namespace NSPresentationEditor
             return dwVal;
         }
 
-        void FromValue(BYTE _R, BYTE _G, BYTE _B)
+        void FromValue(BYTE _R, BYTE _G, BYTE _Blue)
         {
+            // In OpenBSD ctype.h defines _B
             R = _R;
             G = _G;
-            B = _B;
+            B = _Blue;
             Index = -1;
         }
 

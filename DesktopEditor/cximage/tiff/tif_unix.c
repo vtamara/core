@@ -46,7 +46,7 @@
 # include <fcntl.h>
 #endif
 
-#ifdef HAVE_IO_H
+#if defined(HAVE_IO_H) && !defined(__OpenBSD__)
 # include <io.h>
 #endif
 

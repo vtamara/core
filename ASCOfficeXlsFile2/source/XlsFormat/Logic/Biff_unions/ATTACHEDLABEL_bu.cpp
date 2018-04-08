@@ -228,7 +228,10 @@ int ATTACHEDLABEL::serialize(std::wostream & _stream, bool isPosition)
 
 	if (Pos_)
 	{
-		Pos_->m_Frame = FRAME_ ? FRAME_->m_Frame : NULL;
+                if (FRAME_)
+                        Pos_->m_Frame = FRAME_->m_Frame;
+                else
+                        Pos_->m_Frame = {};
 	}
 	else if (isPosition && textProps)
 	{

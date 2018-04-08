@@ -58,6 +58,12 @@
 
 #ifndef _GSTRING_H_
 #define _GSTRING_H_
+#if defined(__OpenBSD__)
+#define HAS_MBSTATE 1
+#define HAVE_STDINCLUDES 1
+#define UNIX 1
+#define HAS_WCHAR 1
+#endif
 #ifdef HAVE_CONFIG_H
 #include "config.h"
 #endif
